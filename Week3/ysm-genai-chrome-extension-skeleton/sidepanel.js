@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener(async ({ name, data }) => {
     langSelector.style.display = "block";
   }
   else if (name === '???') {
-    // ???
+    myAction(data);
   }
 });
 
@@ -50,9 +50,10 @@ async function summarizeText(text) {
   // TODO
 }
 
-
-
 async function translateText() {
   // TODO
 }
 
+async function myAction(text) {
+  // TODO
+}
